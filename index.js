@@ -27,6 +27,7 @@ function displaySearchResults(x) {
 }
 
 function resultsOnPage(myArray) {
+	resultsList.classList.add('visible');
 	resultsList.innerHTML = ' ';
 	resultsList.insertAdjacentHTML('beforeend', `<h2>Search Results for ${searchInput.value} </h2>`);
 
