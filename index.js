@@ -28,6 +28,10 @@ function displaySearchResults(x) {
 
 function resultsOnPage(myArray) {
 	resultsList.classList.add('visible');
+	if (!myArray.length) {
+		resultsList.innerHTML = 'No results found';
+		return;
+	}
 	resultsList.innerHTML = ' ';
 	resultsList.insertAdjacentHTML('beforeend', `<h2>Search Results for ${searchInput.value} </h2>`);
 
